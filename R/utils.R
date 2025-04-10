@@ -63,11 +63,7 @@ check_user_pass <- function(x){
 check_user_mail <- function(x) {
   ###检测是否是 edu 或者 edu.cn 结尾的
   check1 <- stringi::stri_detect(regex = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z-a-z]{2,}$", str = as.character(x))
-<<<<<<< HEAD
-  check2 <- stringi::stri_detect(regex = "edu\\..+$|\\.edu$|ac\\..+$|\\.ac$|ugr\\..+$|\\.ugr$|UBC.CA|\\.cn|unav.es$|yakebiotech.com$|unige.ch$|.nl$|gov|tec.mx$|petermac.org|carrerasresearch.org|vladimirmascience|helmholtz-munich.de", 
-=======
-  check2 <- stringi::stri_detect(regex = "edu\\..+$|\\.edu$|ac\\..+$|\\.ac$|ugr\\..+$|\\.ugr$|UBC.CA|\\.cn|unav.es$|yakebiotech.com$|unige.ch$|.nl$|gov|tec.mx$|petermac.org|carrerasresearch.org|vladimirmascience|1650464505|18075361819", 
->>>>>>> d2697122d96f2e2d288e92358953a99f732b0382
+  check2 <- stringi::stri_detect(regex = "edu\\..+$|\\.edu$|ac\\..+$|\\.ac$|ugr\\..+$|\\.ugr$|UBC.CA|\\.cn|unav.es$|yakebiotech.com$|unige.ch$|.nl$|gov|tec.mx$|petermac.org|carrerasresearch.org|vladimirmascience|1650464505|18075361819|helmholtz-munich.de", 
                                  str=as.character(x))
   check1 & check2
 }
